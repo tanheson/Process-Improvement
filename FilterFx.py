@@ -1,11 +1,14 @@
 import os
 import shutil
 import time
+from pathlib import Path
 
 # Define source and destination paths
-# source_folder = r"C:/Results/ARL/S681/A0"
 source_folder = r"C:/Results/NVL/HX/A0"
 destination_folder = r"U:/NVL/HX/A0/results_production"
+
+# Required file keyword to check
+required_file_keyword = "HotVmin.xlsx"
 
 try:
     # Check if source folder exists
@@ -17,22 +20,20 @@ try:
     if not os.path.exists(destination_parent):
         raise OSError(f"Parent directory '{destination_parent}' does not exist. Please create it first.")
 
-    # # Delete existing destination folder if it exists
-    # if os.path.exists(destination_folder):
-    #     shutil.rmtree(destination_folder)
-    #     print(f"Deleted existing folder: '{destination_folder}'")
-
     # Create destination folder
     os.makedirs(destination_folder, exist_ok=True)
 
-    # Function to check if a folder contains a file with "HotVmin" in its name
-    def has_hotvmin_file(folder_path):
+    # Function to check if a folder contains a file with the required keyword and get the latest modified file
+    def get_latest_hotvmin_file(folder_path):
+        hotvmin_files = []
         for root, _, files in os.walk(folder_path):
-            if any("HotVmin" in f for f in files):
-                return True
-        return False
+            hotvmin_files.extend([os.path.join(root, f) for f in files if required_file_keyword in f])
+        if not hotvmin_files:
+            return None, False  # No "HotVmin.xlsx" file found
+        latest_file = max(hotvmin_files, key=os.path.getmtime, default=None)
+        return latest_file, True  # Return latest file path and flag indicating presence
 
-    # Copy folders that contain "HotVmin" files
+    # Traverse the source folder
     for root, dirs, files in os.walk(source_folder):
         # Calculate the relative path from source_folder
         relative_path = os.path.relpath(root, source_folder)
@@ -44,10 +45,14 @@ try:
             dirs_to_keep = []
             for dir_name in dirs:
                 dir_full_path = os.path.join(root, dir_name)
-                if has_hotvmin_file(dir_full_path):
+                latest_file, has_hotvmin = get_latest_hotvmin_file(dir_full_path)
+                if "HotVmin" in dir_name and not has_hotvmin:
+                    print(f"Ignoring folder '{dir_full_path}' as it lacks a '{required_file_keyword}' file.")
+                elif "HotVmin" in dir_name and has_hotvmin:
+                    print(f"Keeping folder '{dir_full_path}' with latest '{os.path.basename(latest_file)}' (modified: {time.ctime(os.path.getmtime(latest_file))})")
                     dirs_to_keep.append(dir_name)
                 else:
-                    print(f"Ignoring folder '{dir_full_path}' as it does not contain a 'HotVmin' file.")
+                    dirs_to_keep.append(dir_name)  # Keep non-"HotVmin" folders
             # Update dirs to only include folders to keep (modifies os.walk behavior)
             dirs[:] = dirs_to_keep
 
@@ -55,6 +60,12 @@ try:
         for file in files:
             source_path = os.path.join(root, file)
             destination_path = os.path.join(dest_path, file)
+            # Only copy the latest "HotVmin.xlsx" if it matches, ignore others
+            if "HotVmin" in os.path.basename(root) and required_file_keyword in file:
+                latest_file, _ = get_latest_hotvmin_file(root)
+                if os.path.abspath(source_path) != os.path.abspath(latest_file):
+                    print(f"Ignoring older '{file}' in '{root}'.")
+                    continue  # Skip older "HotVmin.xlsx" files
             os.makedirs(os.path.dirname(destination_path), exist_ok=True)
             shutil.copy2(source_path, destination_path)
             print(f"Copied: {file} to {destination_path}")
@@ -63,16 +74,13 @@ try:
 
     # Log the completion time
     current_time = time.strftime("%H:%M:%S %Z, %Y-%m-%d", time.localtime())
-    print(f"Copy completed at {current_time} (e.g., 09:54 +08, 2025-07-22)")
+    print(f"Copy completed at {current_time} (e.g., 10:20 +08, 2025-07-28)")
 
 except PermissionError:
-    print(f"Error: Permission denied while accessing '{source_folder}' or '{destination_folder}'. Ensure you have appropriate file.")
+    print(f"Error: Permission denied while accessing '{source_folder}' or '{destination_folder}'. Ensure you have appropriate rights.")
 except FileNotFoundError as e:
     print(f"Error: {str(e)}")
 except OSError as e:
     print(f"Error: Failed to copy folder. {str(e)}")
 except Exception as e:
     print(f"Unexpected error: {str(e)}")
-
-
-
