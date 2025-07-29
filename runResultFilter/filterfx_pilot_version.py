@@ -7,7 +7,7 @@ from datetime import datetime
 # Define multiple source folders (network drives) and a single destination
 source_folders = [
     # r"C:/Results/NVL/HX/A0"  # Local drive
-      r"C:/Results/ARL/S681/A0"  # Local drive
+    r"C:/Results/ARL/S681/A0"  # Local drive
     r"//PG07TCMV0080/c$/Results/ARL/S681/A0", 
     r"//PG07TCMV0081/c$/Results/ARL/S681/A0", 
     r"//PG07TCMV0082/c$/Results/ARL/S681/A0", 
