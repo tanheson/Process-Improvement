@@ -4,31 +4,21 @@ import time
 import logging
 from datetime import datetime
 
-# Define multiple source folders (network drives) and a single destination
+# Define multiple source folders and a single destination
 source_folders = [
-    # r"C:/Results/NVL/HX/A0"  # Local drive
-    r"C:/Results/ARL/S681/A0"  # Local drive
-    r"//PG07TCMV0080/c$/Results/ARL/S681/A0", 
-    r"//PG07TCMV0081/c$/Results/ARL/S681/A0", 
-    r"//PG07TCMV0082/c$/Results/ARL/S681/A0", 
-    r"//PG07TCMV0083/c$/Results/ARL/S681/A0", 
-    r"//PG07TCMV0084/c$/Results/ARL/S681/A0", 
-    r"//PG07TCMV0085/c$/Results/ARL/S681/A0", 
-    r"//PG07TCMV0086/c$/Results/ARL/S681/A0", 
+    r"C:/Results/ARL/S681/A0",                # Local path 
     r"//PG07TCMV0088/c$/Results/ARL/S681/A0", 
-  
 
 ]
 destination_folder = r"U:/NVL/HX/A0/results_production"
-destination_log_folder = r"U:/users/Hs/script/Process-Improvement/debuglog"
 
 # Required file keyword to check
 required_file_keyword = "HotVmin.xlsx"
 
-# Set up logging
-log_dir = os.path.join(destination_log_folder, "logs")
-os.makedirs(log_dir, exist_ok=True)
-log_filename = os.path.join(log_dir, f"copy_log_{time.strftime('%Y%m%d_%H%M%S')}.log")
+# Define custom log directory
+custom_log_dir = r"U:/users/Hs/script/Process-Improvement/runResultFilter/debuglog" # Change this to your desired log folder path
+os.makedirs(custom_log_dir, exist_ok=True)
+log_filename = os.path.join(custom_log_dir, f"copy_log_{time.strftime('%Y%m%d_%H%M%S')}.log")
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -98,7 +88,11 @@ try:
                 dirs_to_keep = []
                 for dir_name in dirs:
                     dir_full_path = os.path.join(root, dir_name)
-                    if "HotVmin" in dir_name:
+                    # Ignore the specific folder '99999999_999_+99_+99'
+                    if dir_name == "99999999_999_+99_+99":
+                        logging.info(f"Ignoring folder '{dir_full_path}' as it matches the excluded name '99999999_999_+99_+99'.")
+                        continue
+                    if "HotVmin" or "HotGNG" in dir_name:
                         # Get the latest timestamp folder
                         latest_timestamp_folder = get_latest_timestamp_folder(dir_full_path)
                         if not latest_timestamp_folder:
@@ -112,12 +106,12 @@ try:
                         logging.info(f"Keeping folder '{dir_full_path}' with latest timestamp folder '{os.path.basename(latest_timestamp_folder)}' and '{os.path.basename(latest_file)}' (modified: {time.ctime(os.path.getmtime(latest_file))})")
                         dirs_to_keep.append(dir_name)  # Keep the HotVmin folder
                     else:
-                        dirs_to_keep.append(dir_name)  # Keep non-"HotVmin" folders
+                        dirs_to_keep.append(dir_name)  # Keep non-"HotVmin" and non-excluded folders
                 # Update dirs to only include folders to keep (modifies os.walk behavior)
                 dirs[:] = dirs_to_keep
 
                 # Filter timestamp folders within HotVmin
-                if "HotVmin" in os.path.basename(root):
+                if "HotVmin" and "HotGNG" in os.path.basename(root):
                     latest_timestamp_folder = get_latest_timestamp_folder(root)
                     if latest_timestamp_folder:
                         # Keep only the latest timestamp folder
@@ -134,12 +128,12 @@ try:
             for file in files:
                 source_path = os.path.join(root, file)
                 destination_path = os.path.join(dest_path, file)
-                if not "HotVmin" in os.path.basename(root):  # Avoid copying files directly under HotVmin
+                if not "HotVmin" or "HotGNG" in os.path.basename(root):  # Avoid copying files directly under HotVmin
                     os.makedirs(os.path.dirname(destination_path), exist_ok=True)
                     shutil.copy2(source_path, destination_path)
                     logging.info(f"Copied: {file} to {destination_path}")
                 # Handle copying from the latest timestamp folder under HotVmin
-                if "HotVmin" in os.path.basename(os.path.dirname(root)) and os.path.basename(root).replace(".", "_").replace(":", "").isdigit():
+                if "HotVmin" or "HotGNG" in os.path.basename(os.path.dirname(root)) and os.path.basename(root).replace(".", "_").replace(":", "").isdigit():
                     latest_timestamp_folder = get_latest_timestamp_folder(os.path.dirname(root))
                     if root.startswith(latest_timestamp_folder):
                         if required_file_keyword in file:
@@ -155,7 +149,7 @@ try:
 
     # Log the completion time
     current_time = time.strftime("%H:%M:%S %Z, %Y-%m-%d", time.localtime())
-    logging.info(f"Copy completed at {current_time} (e.g., 09:16 +08, 2025-07-29)")
+    logging.info(f"Copy completed at {current_time} (e.g., 19:03 +08, 2025-08-06)")
 
 except PermissionError:
     logging.error(f"Error: Permission denied while accessing a source or '{destination_folder}'. Ensure you have appropriate rights.")

@@ -1,14 +1,29 @@
 import os
 import shutil
 import time
+import logging
 from datetime import datetime
 
 # Define source and destination paths
-source_folder = r"C:/Results/NVL/HX/A0"
+# source_folder = r"C:/Results/NVL/HX/A0"
+source_folder = r"C:/Results/ARL/S681/A0"
 destination_folder = r"U:/NVL/HX/A0/results_production"
 
 # Required file keyword to check
 required_file_keyword = "HotVmin.xlsx"
+
+# Define custom log directory
+custom_log_dir = r"U:/users/Hs/script/Process-Improvement/runResultFilter/debuglog" # Change this to your desired log folder path
+os.makedirs(custom_log_dir, exist_ok=True)
+log_filename = os.path.join(custom_log_dir, f"copy_log_{time.strftime('%Y%m%d_%H%M%S')}.log")
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(log_filename),
+        logging.StreamHandler()  # Output to console as well
+    ]
+)
 
 def get_latest_hotvmin_file(folder_path):
     """Check if a folder contains a file with the required keyword and get the latest modified file."""
@@ -65,21 +80,25 @@ try:
             dirs_to_keep = []
             for dir_name in dirs:
                 dir_full_path = os.path.join(root, dir_name)
+                # Ignore the specific folder '99999999_999_+99_+99'
+                if dir_name == "99999999_999_+99_+99":
+                    logging.info(f"Ignoring folder '{dir_full_path}' as it matches the excluded name '99999999_999_+99_+99'.")
+                    continue
                 if "HotVmin" in dir_name:
                     # Get the latest timestamp folder
                     latest_timestamp_folder = get_latest_timestamp_folder(dir_full_path)
                     if not latest_timestamp_folder:
-                        print(f"Ignoring folder '{dir_full_path}' as it lacks valid timestamp folders.")
+                        logging.info(f"Ignoring folder '{dir_full_path}' as it lacks valid timestamp folders.")
                         continue
                     # Check for HotVmin.xlsx in the latest timestamp folder
                     latest_file, has_hotvmin = get_latest_hotvmin_file(latest_timestamp_folder)
                     if not has_hotvmin:
-                        print(f"Ignoring folder '{dir_full_path}' as the latest timestamp folder lacks a '{required_file_keyword}' file.")
+                        logging.info(f"Ignoring folder '{dir_full_path}' as the latest timestamp folder lacks a '{required_file_keyword}' file.")
                         continue
-                    print(f"Keeping folder '{dir_full_path}' with latest timestamp folder '{os.path.basename(latest_timestamp_folder)}' and '{os.path.basename(latest_file)}' (modified: {time.ctime(os.path.getmtime(latest_file))})")
+                    logging.info(f"Keeping folder '{dir_full_path}' with latest timestamp folder '{os.path.basename(latest_timestamp_folder)}' and '{os.path.basename(latest_file)}' (modified: {time.ctime(os.path.getmtime(latest_file))})")
                     dirs_to_keep.append(dir_name)  # Keep the HotVmin folder
                 else:
-                    dirs_to_keep.append(dir_name)  # Keep non-"HotVmin" folders
+                    dirs_to_keep.append(dir_name)  # Keep non-"HotVmin" and non-excluded folders
             # Update dirs to only include folders to keep (modifies os.walk behavior)
             dirs[:] = dirs_to_keep
 
@@ -94,7 +113,7 @@ try:
                         if dir_full_path == latest_timestamp_folder:
                             timestamp_dirs_to_keep.append(dir_name)
                         else:
-                            print(f"Ignoring timestamp folder '{dir_full_path}' as it is not the latest.")
+                            logging.info(f"Ignoring timestamp folder '{dir_full_path}' as it is not the latest.")
                     dirs[:] = timestamp_dirs_to_keep  # Restrict to only the latest timestamp folder
 
         # Copy files and create directories
@@ -104,7 +123,7 @@ try:
             if not "HotVmin" in os.path.basename(root):  # Avoid copying files directly under HotVmin
                 os.makedirs(os.path.dirname(destination_path), exist_ok=True)
                 shutil.copy2(source_path, destination_path)
-                print(f"Copied: {file} to {destination_path}")
+                logging.info(f"Copied: {file} to {destination_path}")
             # Handle copying from the latest timestamp folder under HotVmin
             if "HotVmin" in os.path.basename(os.path.dirname(root)) and os.path.basename(root).replace(".", "_").replace(":", "").isdigit():
                 latest_timestamp_folder = get_latest_timestamp_folder(os.path.dirname(root))
@@ -112,52 +131,23 @@ try:
                     if required_file_keyword in file:
                         latest_file, _ = get_latest_hotvmin_file(root)
                         if os.path.abspath(source_path) != os.path.abspath(latest_file):
-                            print(f"Ignoring older '{file}' in '{root}'.")
+                            logging.info(f"Ignoring older '{file}' in '{root}'.")
                             continue
                     os.makedirs(os.path.dirname(destination_path), exist_ok=True)
                     shutil.copy2(source_path, destination_path)
-                    print(f"Copied: {file} to {destination_path}")
+                    logging.info(f"Copied: {file} to {destination_path}")
 
-    print("All desired folders and files are copied")
+    logging.info("All desired folders and files are copied")
 
     # Log the completion time
     current_time = time.strftime("%H:%M:%S %Z, %Y-%m-%d", time.localtime())
-    print(f"Copy completed at {current_time} (e.g., 18:27 +08, 2025-07-28)")
+    logging.info(f"Copy completed at {current_time} (e.g., 18:48 +08, 2025-08-06)")
 
 except PermissionError:
-    print(f"Error: Permission denied while accessing '{source_folder}' or '{destination_folder}'. Ensure you have appropriate rights.")
+    logging.error(f"Error: Permission denied while accessing '{source_folder}' or '{destination_folder}'. Ensure you have appropriate rights.")
 except FileNotFoundError as e:
-    print(f"Error: {str(e)}")
+    logging.error(f"Error: {str(e)}")
 except OSError as e:
-    print(f"Error: Failed to copy folder. {str(e)}")
+    logging.error(f"Error: Failed to copy folder. {str(e)}")
 except Exception as e:
-    print(f"Unexpected error: {str(e)}")
-
-
-
-#======================APPENDIX#======================#
-"""
-C:/Results/NVL/HX/A0/
-  D3/
-    HotVmin1/
-      2025.07.25_19.28.10/  (Contains HotVmin1.xlsx [2025-07-25])
-      2025.07.26_10.15.30/  (Contains HotVmin_old.xlsx [2025-07-26], HotVmin_new.xlsx [2025-07-26, later])
-    HotVmin2/               (No HotVmin.xlsx in any timestamp, will be skipped)
-  D4/
-    HotVmin3/
-      2025.07.27_14.00.00/  (Contains HotVmin3.xlsx [2025-07-27])
-      2025.07.28_14.30.00/  (Contains HotVmin_new.xlsx [2025-07-28], latest)
-    HotVmin4/               (No timestamp folders, will be skipped)
-
-
-Result: 
-HotVmin1 is kept, with only 2025.07.26_10.15.30 copied, containing only HotVmin_new.xlsx (latest modified).
-HotVmin3 is kept, with only 2025.07.28_14.30.00 copied, containing only HotVmin_new.xlsx.
-HotVmin2 and HotVmin4 are skipped.
-Copied to:U:/NVL/HX/A0/results_production/D3/HotVmin1/2025.07.26_10.15.30/
-U:/NVL/HX/A0/results_production/D4/HotVmin3/2025.07.28_14.30.00/
-
-No other timestamp folders (e.g., "2025.07.25_19.28.10" or "2025.07.27_14.00.00") will appear.
-
-
-"""
+    logging.error(f"Unexpected error: {str(e)}")
