@@ -1,0 +1,11 @@
+2025-09-02 18:58:01,005 - INFO - Ignoring folder 'C:/Results/NVL/HX/A0\D4534T6400084\99999999_999_+99_+99' as it matches the excluded name '99999999_999_+99_+99'.
+2025-09-02 18:58:01,026 - INFO - Keeping folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_SOC_SA_GT_F3_HotVmin' with latest timestamp folder '2025.07.25_20.28.10' and 'PGPMDIB7LGE_D4600EL800316_ARL_S681_SOC_SA_GT_F3_HotVmin.xlsx' (modified: Fri Jul 25 19:28:15 2025)
+2025-09-02 18:58:01,034 - INFO - Keeping folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_SOC_SA_VPU_F3_HotVmin' with latest timestamp folder '2025.07.25_22.46.11' and 'PGPMDIB7SYE_D4600EL800316_ARL_S681_SOC_SA_VPU_F3_HotVmin.xlsx' (modified: Fri Jul 25 21:46:14 2025)
+2025-09-02 18:58:01,037 - INFO - Ignoring timestamp folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_19.28.10' as it is not the latest.
+2025-09-02 18:58:01,076 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_20.28.10\DataLog.itf
+2025-09-02 18:58:01,449 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_20.28.10\DebugLog.txt
+2025-09-02 18:58:01,484 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_20.28.10\LoopingResults.txt
+2025-09-02 18:58:01,505 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_20.28.10\LotMetaData.json
+2025-09-02 18:58:01,567 - INFO - Copied: PGPMDIB7LGE_D4600EL800316_ARL_S681_SOC_SA_GT_F3_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_20.28.10\PGPMDIB7LGE_D4600EL800316_ARL_S681_SOC_SA_GT_F3_HotVmin.xlsx
+2025-09-02 18:58:01,627 - INFO - Copied: PGPMDIB7LGF_D4600EL800316_ARL_S681_SOC_SA_GT_F3_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_20.28.10\PGPMDIB7LGF_D4600EL800316_ARL_S681_SOC_SA_GT_F3_HotVmin.xlsx
+2025-09-02 18:58:01,660 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_20.28.10\ProfileLog.csv

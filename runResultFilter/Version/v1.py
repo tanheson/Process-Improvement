@@ -5,8 +5,8 @@ import logging
 from datetime import datetime
 
 # Define source and destination paths
-# source_folder = r"C:/Results/NVL/HX/A0"
-source_folder = r"C:/Results/ARL/S681/A0"
+source_folder = r"C:/Results/NVL/HX/A0"
+# source_folder = r"C:/Results/ARL/S681/A0"
 destination_folder = r"U:/NVL/HX/A0/results_production"
 
 # Required file keyword to check

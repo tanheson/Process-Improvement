@@ -1,0 +1,88 @@
+2025-08-28 16:09:23,378 - INFO - Processing source folder: C:/Results/ARL/S681/A0
+2025-08-28 16:09:23,379 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\99999999_999_+99_+99' as it matches the excluded name '99999999_999_+99_+99'.
+2025-08-28 16:09:23,384 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A0_x_F1_HotVmin' with latest timestamp folder '2025.08.18_11.38.13' and 'PGPMEGFUXNR_D4534T6400035_ARL_S681_CPU_A0_x_F1_HotVmin.xlsx' (modified: Mon Aug 18 11:38:39 2025)
+2025-08-28 16:09:23,386 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A0_x_F2_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,388 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A0_x_F3_HotGNG' as the latest timestamp folder lacks a 'HotVmin.xlsx' file.
+2025-08-28 16:09:23,391 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A0_x_F5_HotVmin' with latest timestamp folder '2025.07.30_21.48.51' and 'PGPMDPS9R8R_D4534T6400035_ARL_S681_CPU_A0_x_F5_HotVmin.xlsx' (modified: Wed Jul 30 21:49:05 2025)
+2025-08-28 16:09:23,393 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A0_x_F6_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,396 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A1_x_F1_HotVmin' with latest timestamp folder '2025.08.18_13.58.21' and 'PGPMEGFV39W_D4534T6400035_ARL_S681_CPU_A1_x_F1_HotVmin.xlsx' (modified: Mon Aug 18 13:58:46 2025)
+2025-08-28 16:09:23,398 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A1_x_F2_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,400 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A1_x_F5_HotVmin' with latest timestamp folder '2025.07.31_02.21.18' and 'PGPMDPS9YHK_D4534T6400035_ARL_S681_CPU_A1_x_F5_HotVmin.xlsx' (modified: Thu Jul 31 02:21:32 2025)
+2025-08-28 16:09:23,402 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A1_x_F6_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,405 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C0_Avx128_F1_HotVmin' with latest timestamp folder '2025.08.27_13.46.13' and 'PGPMETF2AM1_D4534T6400035_ARL_S681_CPU_C0_Avx128_F1_HotVmin.xlsx' (modified: Wed Aug 27 13:46:40 2025)
+2025-08-28 16:09:23,408 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C0_Avx128_F6_HotVmin' with latest timestamp folder '2025.07.28_17.58.11' and 'PGPMDMQL2X8_D4534T6400035_ARL_S681_CPU_C0_Avx128_F6_HotVmin.xlsx' (modified: Mon Jul 28 17:58:25 2025)
+2025-08-28 16:09:23,409 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C1_Avx128_F5_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,414 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C3_Avx128_F1_HotVmin' with latest timestamp folder '2025.08.27_15.58.32' and 'PGPMETF2GLJ_D4534T6400035_ARL_S681_CPU_C3_Avx128_F1_HotVmin.xlsx' (modified: Wed Aug 27 15:58:59 2025)
+2025-08-28 16:09:23,415 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C3_Avx128_F6_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,418 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C5_Avx128_F5_HotVmin' with latest timestamp folder '2025.08.01_11.41.11' and 'PGPMDS6AI0G_D4534T6400035_ARL_S681_CPU_C5_Avx128_F5_HotVmin.xlsx' (modified: Fri Aug  1 11:41:24 2025)
+2025-08-28 16:09:23,421 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_CPU_Ring_x_F1_HotVmin' with latest timestamp folder '2025.08.18_17.12.25' and 'PGPMEGQGRMI_D4534T6400035_ARL_S681_CPU_Ring_x_F1_HotVmin.xlsx' (modified: Mon Aug 18 17:12:52 2025)
+2025-08-28 16:09:23,425 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_CPU_Ring_x_F5_HotVmin' with latest timestamp folder '2025.07.31_16.42.15' and 'PGPMDR0MKH7_D4534T6400035_ARL_S681_CPU_Ring_x_F5_HotVmin.xlsx' (modified: Thu Jul 31 16:42:28 2025)
+2025-08-28 16:09:23,426 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_CPU_Ring_x_F6_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,428 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_GCD_GT_x_F2_Vmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,431 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_GCD_GT_x_F4_HotVmin' with latest timestamp folder '2025.07.23_09.28.18' and 'PGPMDF9M9Q4_D4534T6400035_ARL_S681_GCD_GT_x_F4_HotVmin.xlsx' (modified: Wed Jul 23 09:28:19 2025)
+2025-08-28 16:09:23,433 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_GCD_GT_x_F5_Vmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,436 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_SOC_SA_DRG_F3_HotVmin' with latest timestamp folder '2025.07.23_12.57.07' and 'PGPMDFCGEJI_D4534T6400035_ARL_S681_SOC_SA_DRG_F3_HotVmin.xlsx' (modified: Wed Jul 23 12:57:22 2025)
+2025-08-28 16:09:23,439 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_SOC_SA_GT_F3_HotVmin' with latest timestamp folder '2025.07.24_16.26.23' and 'PGPMDGQI3H5_D4534T6400035_ARL_S681_SOC_SA_GT_F3_HotVmin.xlsx' (modified: Thu Jul 24 16:26:28 2025)
+2025-08-28 16:09:23,442 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_SOC_SA_VPU_F3_HotVmin' with latest timestamp folder '2025.07.25_11.22.30' and 'PGPMDI71ON8_D4534T6400035_ARL_S681_SOC_SA_VPU_F3_HotVmin.xlsx' (modified: Fri Jul 25 11:22:32 2025)
+2025-08-28 16:09:23,445 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.08.18_11.38.13' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,448 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A0_x_F5_HotVmin\2025.07.29_19.06.13' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,449 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A0_x_F5_HotVmin\2025.07.30_12.44.23' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,452 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A0_x_F5_HotVmin\2025.07.30_21.48.51' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,455 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A1_x_F1_HotVmin\2025.08.18_13.58.21' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,458 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A1_x_F5_HotVmin\2025.07.30_17.27.54' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,460 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_A1_x_F5_HotVmin\2025.07.31_02.21.18' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,463 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C0_Avx128_F1_HotVmin\2025.08.15_19.03.57' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,466 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C0_Avx128_F1_HotVmin\2025.08.27_13.46.13' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,468 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C0_Avx128_F6_HotVmin\2025.07.28_17.58.11' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,469 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C3_Avx128_F1_HotVmin\2025.08.15_21.25.08' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,471 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C3_Avx128_F1_HotVmin\2025.08.27_15.58.32' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,473 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\2025.07.31_21.06.14' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,474 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\2025.08.01_11.41.11' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,476 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_CPU_Ring_x_F1_HotVmin\2025.08.18_17.12.25' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,478 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.29_13.56.30' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,481 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.31_12.03.17' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,483 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.31_16.42.15' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,484 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_GCD_GT_x_F4_HotVmin\2025.07.22_16.56.03' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,486 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_GCD_GT_x_F4_HotVmin\2025.07.23_09.28.18' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,488 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_SOC_SA_DRG_F3_HotVmin\2025.07.23_12.57.07' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,490 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.23_17.19.51' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,492 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.24_16.26.23' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,494 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_SOC_SA_VPU_F3_HotVmin\2025.07.23_18.55.19' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,496 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\ARL_S681_SOC_SA_VPU_F3_HotVmin\2025.07.25_11.22.30' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,499 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin' with latest timestamp folder '2025.07.28_11.22.15' and 'PGPMDMGLNXO_D4600EL800316_ARL_S681_CPU_Ring_x_F5_HotVmin.xlsx' (modified: Mon Jul 28 11:22:18 2025)
+2025-08-28 16:09:23,502 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin' with latest timestamp folder '2025.07.25_19.28.10' and 'PGPMDIB7LGE_D4600EL800316_ARL_S681_SOC_SA_GT_F3_HotVmin.xlsx' (modified: Fri Jul 25 19:28:15 2025)
+2025-08-28 16:09:23,506 - INFO - Keeping folder 'C:/Results/ARL/S681/A0\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin' with latest timestamp folder '2025.07.25_21.46.11' and 'PGPMDIB7SYQ_D4600EL800316_ARL_S681_SOC_SA_VPU_F3_HotVmin.xlsx' (modified: Fri Jul 25 21:46:14 2025)
+2025-08-28 16:09:23,508 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.28_11.22.15' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,510 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_19.28.10' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,512 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\2025.07.25_21.46.11' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,516 - INFO - Processing source folder: //PG07TCMV0088/c$/Results/ARL/S681/A0
+2025-08-28 16:09:23,522 - INFO - Keeping folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin' with latest timestamp folder '2025.07.28_16.55.55' and 'PGPMDMRQV01_D4600EL800800_ARL_S681_CPU_A0_x_F5_HotVmin.xlsx' (modified: Mon Jul 28 16:56:08 2025)
+2025-08-28 16:09:23,523 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_A0_x_F6_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,527 - INFO - Keeping folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin' with latest timestamp folder '2025.07.29_16.40.26' and 'PGPMDO612AA_D4600EL800800_ARL_S681_CPU_A1_x_F5_HotVmin.xlsx' (modified: Tue Jul 29 16:40:39 2025)
+2025-08-28 16:09:23,530 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_A1_x_F6_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,532 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_C0_Avx128_F1_HotGNG' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,533 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_C0_Avx128_F6_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,534 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_C1_Avx128_F5_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,535 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_C3_Avx128_F6_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,540 - INFO - Keeping folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin' with latest timestamp folder '2025.08.05_18.02.28' and 'PGPMDY5ZR5M_D4600EL800800_ARL_S681_CPU_C5_Avx128_F5_HotVmin.xlsx' (modified: Tue Aug  5 18:02:41 2025)
+2025-08-28 16:09:23,544 - INFO - Keeping folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin' with latest timestamp folder '2025.07.30_20.23.09' and 'PGPMDPMWFDY_D4600EL800800_ARL_S681_CPU_Ring_x_F5_HotVmin.xlsx' (modified: Wed Jul 30 20:23:23 2025)
+2025-08-28 16:09:23,545 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_CPU_Ring_x_F6_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,550 - INFO - Keeping folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin' with latest timestamp folder '2025.07.24_17.46.38' and 'PGPMDGY3H3H_D4600EL800800_ARL_S681_GCD_GT_x_F4_HotVmin.xlsx' (modified: Thu Jul 24 17:46:42 2025)
+2025-08-28 16:09:23,556 - INFO - Keeping folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin' with latest timestamp folder '2025.08.05_19.49.19' and 'PGPMDY5ZZZ4_D4600EL800800_ARL_S681_GCD_GT_x_F5_HotVmin.xlsx' (modified: Tue Aug  5 19:49:22 2025)
+2025-08-28 16:09:23,559 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_SOC_SA_DRG_F1_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,561 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_SOC_SA_DRG_F2_HotVmin' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,566 - INFO - Keeping folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin' with latest timestamp folder '2025.08.06_12.05.04' and 'PGPMDZAHOK4_D4600EL800800_ARL_S681_SOC_SA_VPU_F2_HotVmin.xlsx' (modified: Wed Aug  6 12:05:05 2025)
+2025-08-28 16:09:23,570 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\2025.07.28_16.55.55' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,573 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\2025.07.29_12.17.44' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,576 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\2025.07.29_16.40.26' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,579 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\2025.08.05_16.17.54' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,581 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\2025.08.05_18.02.28' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,584 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.30_15.03.05' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,587 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.30_20.23.09' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,591 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\2025.07.24_17.46.38' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,595 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\2025.07.25_12.54.28' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,597 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\2025.08.05_19.49.19' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,600 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\2025.08.06_11.03.54' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,604 - INFO - Ignoring folder '//PG07TCMV0088/c$/Results/ARL/S681/A0\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\2025.08.06_12.05.04' as it lacks valid timestamp folders.
+2025-08-28 16:09:23,605 - INFO - All desired folders and files from all sources are copied
+2025-08-28 16:09:23,605 - INFO - Copy completed at 16:09:23 Malay Peninsula Standard Time, 2025-08-28 (e.g., 19:03 +08, 2025-08-06)

@@ -7,7 +7,8 @@ from datetime import datetime
 # Define multiple source folders and a single destination
 source_folders = [
     r"C:/Results/ARL/S681/A0",                # Local path 
-    r"//PG07TCMV0088/c$/Results/ARL/S681/A0", 
+    r"//PG07TCMV0084/c$/Results/ARL/S681/A0", 
+    r"//PG07TCMV0088/c$/Results/ARL/S681/A0"
 
 ]
 destination_folder = r"U:/NVL/HX/A0/results_production"
@@ -92,7 +93,7 @@ try:
                     if dir_name == "99999999_999_+99_+99":
                         logging.info(f"Ignoring folder '{dir_full_path}' as it matches the excluded name '99999999_999_+99_+99'.")
                         continue
-                    if "HotVmin" or "HotGNG" in dir_name:
+                    if "HotVmin" in dir_name:
                         # Get the latest timestamp folder
                         latest_timestamp_folder = get_latest_timestamp_folder(dir_full_path)
                         if not latest_timestamp_folder:
@@ -111,7 +112,7 @@ try:
                 dirs[:] = dirs_to_keep
 
                 # Filter timestamp folders within HotVmin
-                if "HotVmin" and "HotGNG" in os.path.basename(root):
+                if "HotVmin" in os.path.basename(root):
                     latest_timestamp_folder = get_latest_timestamp_folder(root)
                     if latest_timestamp_folder:
                         # Keep only the latest timestamp folder
@@ -128,12 +129,12 @@ try:
             for file in files:
                 source_path = os.path.join(root, file)
                 destination_path = os.path.join(dest_path, file)
-                if not "HotVmin" or "HotGNG" in os.path.basename(root):  # Avoid copying files directly under HotVmin
+                if not "HotVmin" in os.path.basename(root):  # Avoid copying files directly under HotVmin
                     os.makedirs(os.path.dirname(destination_path), exist_ok=True)
                     shutil.copy2(source_path, destination_path)
                     logging.info(f"Copied: {file} to {destination_path}")
                 # Handle copying from the latest timestamp folder under HotVmin
-                if "HotVmin" or "HotGNG" in os.path.basename(os.path.dirname(root)) and os.path.basename(root).replace(".", "_").replace(":", "").isdigit():
+                if "HotVmin" in os.path.basename(os.path.dirname(root)) and os.path.basename(root).replace(".", "_").replace(":", "").isdigit():
                     latest_timestamp_folder = get_latest_timestamp_folder(os.path.dirname(root))
                     if root.startswith(latest_timestamp_folder):
                         if required_file_keyword in file:
