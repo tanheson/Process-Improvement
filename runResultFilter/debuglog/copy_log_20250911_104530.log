@@ -1,0 +1,28 @@
+2025-09-11 10:45:30,343 - INFO - Processing source folder: C:/Results/NVL/HX/A0
+2025-09-11 10:45:30,365 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\.\PythonLog.txt
+2025-09-11 10:45:30,368 - INFO - Ignoring folder 'C:/Results/NVL/HX/A0\D4534T6400084\99999999_999_+99_+99' as it matches the excluded name '99999999_999_+99_+99'.
+2025-09-11 10:45:30,376 - INFO - Ignoring 'PGPMFC06DKI_D4534T6400035_ARL_S681_CPU_A0_x_F1_HotVmin (1).xlsx' in 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29' due to parentheses in filename.
+2025-09-11 10:45:30,379 - INFO - Keeping folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin' with latest timestamp folder '2025.09.09_13.23.29' and 'PGPMFC06DKI_D4534T6400035_ARL_S681_CPU_A0_x_F1_HotVmin.xlsx' (modified: Tue Sep  9 13:23:31 2025)
+2025-09-11 10:45:30,382 - INFO - Keeping folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG' with latest timestamp folder '2025.08.13_11.44.18' and 'PGPME9BY9VH_D4534T6400035_ARL_S681_CPU_A0_x_F3_HotGNG.xlsx' (modified: Wed Aug 13 11:44:30 2025)
+2025-09-11 10:45:30,404 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\PythonLog.txt
+2025-09-11 10:45:30,433 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\PythonLog.txt
+2025-09-11 10:45:30,461 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29\PythonLog.txt
+2025-09-11 10:45:30,489 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29\UnitLogs\PythonLog.txt
+2025-09-11 10:45:30,517 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29\UnitLogs\CurrentUnit\PythonLog.txt
+2025-09-11 10:45:30,549 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29\UnitLogs\CurrentUnit\LotEndFlow\PythonLog.txt
+2025-09-11 10:45:30,552 - INFO - Ignoring folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29\UnitLogs\D4534T6400035\ARL_Atom0_F1_HotVmin' as it lacks valid timestamp folders.
+2025-09-11 10:45:30,580 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29\UnitLogs\D4534T6400035\PythonLog.txt
+2025-09-11 10:45:30,612 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29\UnitLogs\D4534T6400035\LotStartFlow\PythonLog.txt
+2025-09-11 10:45:30,645 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29\UnitLogs\D4534T6400035\UnitEndFlow\PythonLog.txt
+2025-09-11 10:45:30,678 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29\UnitLogs\D4534T6400035\UnitStartFlow\PythonLog.txt
+2025-09-11 10:45:30,704 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\PythonLog.txt
+2025-09-11 10:45:30,731 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_11.44.18\PythonLog.txt
+2025-09-11 10:45:30,753 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_11.44.18\UnitLogs\PythonLog.txt
+2025-09-11 10:45:30,782 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_11.44.18\UnitLogs\CurrentUnit\PythonLog.txt
+2025-09-11 10:45:30,807 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_11.44.18\UnitLogs\CurrentUnit\LotEndFlow\PythonLog.txt
+2025-09-11 10:45:30,834 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_11.44.18\UnitLogs\D4534T6400035\PythonLog.txt
+2025-09-11 10:45:30,860 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_11.44.18\UnitLogs\D4534T6400035\LotStartFlow\PythonLog.txt
+2025-09-11 10:45:30,886 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_11.44.18\UnitLogs\D4534T6400035\UnitEndFlow\PythonLog.txt
+2025-09-11 10:45:30,911 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_11.44.18\UnitLogs\D4534T6400035\UnitStartFlow\PythonLog.txt
+2025-09-11 10:45:30,911 - INFO - All desired folders and files from all sources are copied
+2025-09-11 10:45:30,911 - INFO - Copy completed at 10:45:30 Malay Peninsula Standard Time, 2025-09-11 (e.g., 10:43 +08, 2025-09-11)

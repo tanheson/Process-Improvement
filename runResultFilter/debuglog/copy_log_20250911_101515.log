@@ -1,0 +1,6 @@
+2025-09-11 10:15:15,909 - INFO - Processing source folder: C:/Results/NVL/HX/A0
+2025-09-11 10:15:15,911 - INFO - Ignoring folder 'C:/Results/NVL/HX/A0\D4534T6400084\99999999_999_+99_+99' as it matches the excluded name '99999999_999_+99_+99'.
+2025-09-11 10:15:15,918 - INFO - Ignoring 'PGPMFC06DKI_D4534T6400035_ARL_S681_CPU_A0_x_F1_HotVmin.xlsx' in 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29' as it is a variation of 'HotVmin.xlsx'.
+2025-09-11 10:15:15,923 - INFO - Ignoring folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin' as the latest timestamp folder lacks a 'HotGNG.xlsx' file.
+2025-09-11 10:15:15,924 - INFO - All desired folders and files from all sources are copied
+2025-09-11 10:15:15,926 - INFO - Copy completed at 10:15:15 Malay Peninsula Standard Time, 2025-09-11 (e.g., 10:13 +08, 2025-09-11)

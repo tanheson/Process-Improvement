@@ -1,0 +1,88 @@
+2025-09-11 13:55:35,631 - INFO - Processing source folder: C:/Results/ARL/S681/A0
+2025-09-11 13:55:35,632 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\99999999_999_+99_+99' as it matches the excluded name '99999999_999_+99_+99'.
+2025-09-11 13:55:35,640 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A0_x_F1_HotVmin' to '2025.09.09_13.23.29' (modified: Thu Sep 11 11:20:23 2025)
+2025-09-11 13:55:35,645 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A0_x_F3_HotGNG' to '2025.08.13_11.44.18' (modified: Wed Aug 13 11:45:06 2025)
+2025-09-11 13:55:35,648 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A0_x_F5_HotVmin' to '2025.07.30_21.48.51' (modified: Thu Aug 28 16:32:49 2025)
+2025-09-11 13:55:35,651 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A1_x_F1_HotVmin' to '2025.09.09_19.46.52' (modified: Tue Sep  9 19:46:55 2025)
+2025-09-11 13:55:35,655 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A1_x_F5_HotVmin' to '2025.07.31_02.21.18' (modified: Thu Jul 31 09:37:56 2025)
+2025-09-11 13:55:35,658 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C0_Avx128_F1_HotVmin' to '2025.09.04_16.13.18' (modified: Thu Sep  4 16:13:23 2025)
+2025-09-11 13:55:35,661 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C0_Avx128_F6_HotVmin' to '2025.07.28_17.58.11' (modified: Wed Sep 10 10:21:08 2025)
+2025-09-11 13:55:35,664 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C3_Avx128_F1_HotVmin' to '2025.09.04_21.27.51' (modified: Tue Sep  9 11:17:04 2025)
+2025-09-11 13:55:35,667 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C5_Avx128_F5_HotVmin' to '2025.08.01_11.41.11' (modified: Wed Sep  3 10:45:30 2025)
+2025-09-11 13:55:35,670 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_CPU_Ring_x_F1_HotVmin' to '2025.08.18_17.12.25' (modified: Wed Sep  3 13:23:47 2025)
+2025-09-11 13:55:35,673 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_CPU_Ring_x_F5_HotVmin' to '2025.07.31_16.42.15' (modified: Thu Jul 31 17:27:53 2025)
+2025-09-11 13:55:35,677 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_GCD_GT_x_F4_HotVmin' to '2025.07.23_09.28.18' (modified: Wed Sep  3 13:22:14 2025)
+2025-09-11 13:55:35,680 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_SOC_SA_DRG_F3_HotVmin' to '2025.07.23_12.57.07' (modified: Wed Jul 30 13:10:47 2025)
+2025-09-11 13:55:35,683 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_SOC_SA_GT_F3_HotVmin' to '2025.07.24_16.26.23' (modified: Wed Sep  3 10:47:51 2025)
+2025-09-11 13:55:35,687 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_SOC_SA_VPU_F3_HotVmin' to '2025.07.25_11.22.30' (modified: Wed Jul 30 13:13:50 2025)
+2025-09-11 13:55:35,690 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\99999999_999_+99_+99\ARL_S681_Cdie_A0_x_F5_HotVmin' to '2025.08.01_14.05.20' (modified: Mon Aug  4 09:49:45 2025)
+2025-09-11 13:55:35,696 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\99999999_999_+99_+99\ARL_S681_Cdie_C0_Avx128_F1_HotVmin' to '2025.09.03_15.59.07' (modified: Wed Sep  3 15:59:09 2025)
+2025-09-11 13:55:35,700 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4534T6400035\99999999_999_+99_+99\ARL_S681_Cdie_C3_Avx128_F1_HotVmin' to '2025.08.27_17.51.40' (modified: Thu Aug 28 16:26:41 2025)
+2025-09-11 13:55:35,704 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\99999999_999_+99_+99\ARL_S681_CPU_Ring_x_F5_HotVmin' as the latest timestamp folder lacks a 'HotGNG.xlsx' file.
+2025-09-11 13:55:35,814 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin' to '2025.07.28_11.22.15' (modified: Mon Jul 28 11:22:21 2025)
+2025-09-11 13:55:35,817 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin' to '2025.07.25_19.28.10' (modified: Wed Jul 30 14:36:41 2025)
+2025-09-11 13:55:35,820 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin' to '2025.07.25_21.46.11' (modified: Wed Jul 30 14:36:27 2025)
+2025-09-11 13:55:35,830 - INFO - Processing source folder: //PG07TCMV0088/c$/Results/ARL/S681/A0
+2025-09-11 13:55:35,898 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin' to '2025.07.28_11.25.15' (modified: Thu Sep 11 13:55:08 2025)
+2025-09-11 13:55:36,058 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin' to '2025.07.28_16.55.55' (modified: Wed Aug  6 14:47:56 2025)
+2025-09-11 13:55:36,091 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin' to '2025.07.29_16.40.26' (modified: Wed Aug  6 14:49:22 2025)
+2025-09-11 13:55:36,136 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin' to '2025.08.05_18.02.28' (modified: Wed Aug  6 14:51:34 2025)
+2025-09-11 13:55:36,140 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin' to '2025.07.30_20.23.09' (modified: Wed Aug  6 14:52:21 2025)
+2025-09-11 13:55:36,144 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin' to '2025.07.24_17.46.38' (modified: Wed Aug  6 14:53:12 2025)
+2025-09-11 13:55:36,150 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin' to '2025.08.05_19.49.19' (modified: Wed Aug  6 09:08:11 2025)
+2025-09-11 13:55:36,155 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin' to '2025.08.06_12.05.04' (modified: Wed Aug  6 14:41:13 2025)
+2025-09-11 13:55:36,339 - INFO - Ignoring folder 'C:/Results/ARL/S681/A0\D4534T6400035\99999999_999_+99_+99' as it matches the excluded name '99999999_999_+99_+99'.
+2025-09-11 13:55:36,629 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29'.
+2025-09-11 13:55:37,770 - INFO - Copied timestamp folder '2025.09.09_13.23.29' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29'
+2025-09-11 13:55:38,006 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_11.44.18'.
+2025-09-11 13:55:44,070 - INFO - Copied timestamp folder '2025.08.13_11.44.18' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_11.44.18'
+2025-09-11 13:55:44,437 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A0_x_F5_HotVmin\2025.07.30_21.48.51'.
+2025-09-11 13:55:53,355 - INFO - Copied timestamp folder '2025.07.30_21.48.51' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A0_x_F5_HotVmin\2025.07.30_21.48.51'
+2025-09-11 13:55:53,650 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A1_x_F1_HotVmin\2025.09.09_19.46.52'.
+2025-09-11 13:55:54,740 - INFO - Copied timestamp folder '2025.09.09_19.46.52' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A1_x_F1_HotVmin\2025.09.09_19.46.52'
+2025-09-11 13:55:55,081 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A1_x_F5_HotVmin\2025.07.31_02.21.18'.
+2025-09-11 13:56:04,322 - INFO - Copied timestamp folder '2025.07.31_02.21.18' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_A1_x_F5_HotVmin\2025.07.31_02.21.18'
+2025-09-11 13:56:04,567 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C0_Avx128_F1_HotVmin\2025.09.04_16.13.18'.
+2025-09-11 13:56:05,839 - INFO - Copied timestamp folder '2025.09.04_16.13.18' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C0_Avx128_F1_HotVmin\2025.09.04_16.13.18'
+2025-09-11 13:56:06,104 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C0_Avx128_F6_HotVmin\2025.07.28_17.58.11'.
+2025-09-11 13:56:14,698 - INFO - Copied timestamp folder '2025.07.28_17.58.11' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C0_Avx128_F6_HotVmin\2025.07.28_17.58.11'
+2025-09-11 13:56:14,936 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C3_Avx128_F1_HotVmin\2025.09.04_21.27.51'.
+2025-09-11 13:56:16,155 - INFO - Copied timestamp folder '2025.09.04_21.27.51' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C3_Avx128_F1_HotVmin\2025.09.04_21.27.51'
+2025-09-11 13:56:16,401 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\2025.08.01_11.41.11'.
+2025-09-11 13:56:23,951 - INFO - Copied timestamp folder '2025.08.01_11.41.11' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\2025.08.01_11.41.11'
+2025-09-11 13:56:24,199 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_CPU_Ring_x_F1_HotVmin\2025.08.18_17.12.25'.
+2025-09-11 13:56:37,240 - INFO - Copied timestamp folder '2025.08.18_17.12.25' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_CPU_Ring_x_F1_HotVmin\2025.08.18_17.12.25'
+2025-09-11 13:56:37,517 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.31_16.42.15'.
+2025-09-11 13:56:45,355 - INFO - Copied timestamp folder '2025.07.31_16.42.15' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.31_16.42.15'
+2025-09-11 13:56:45,596 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_GCD_GT_x_F4_HotVmin\2025.07.23_09.28.18'.
+2025-09-11 13:56:46,415 - INFO - Copied timestamp folder '2025.07.23_09.28.18' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_GCD_GT_x_F4_HotVmin\2025.07.23_09.28.18'
+2025-09-11 13:56:46,672 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_SOC_SA_DRG_F3_HotVmin\2025.07.23_12.57.07'.
+2025-09-11 13:56:55,449 - INFO - Copied timestamp folder '2025.07.23_12.57.07' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_SOC_SA_DRG_F3_HotVmin\2025.07.23_12.57.07'
+2025-09-11 13:56:55,679 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.24_16.26.23'.
+2025-09-11 13:56:59,767 - INFO - Copied timestamp folder '2025.07.24_16.26.23' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.24_16.26.23'
+2025-09-11 13:56:59,912 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_SOC_SA_VPU_F3_HotVmin\2025.07.25_11.22.30'.
+2025-09-11 13:57:00,948 - INFO - Copied timestamp folder '2025.07.25_11.22.30' to 'U:/NVL/HX/A0/results_production\D4534T6400035\ARL_S681_SOC_SA_VPU_F3_HotVmin\2025.07.25_11.22.30'
+2025-09-11 13:57:01,169 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.28_11.22.15'.
+2025-09-11 13:57:01,386 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_19.28.10'.
+2025-09-11 13:57:05,758 - INFO - Copied timestamp folder '2025.07.25_19.28.10' to 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_19.28.10'
+2025-09-11 13:57:05,920 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\2025.07.25_21.46.11'.
+2025-09-11 13:57:07,437 - INFO - Copied timestamp folder '2025.07.25_21.46.11' to 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\2025.07.25_21.46.11'
+2025-09-11 13:57:09,907 - INFO - Copied timestamp folder '2025.07.28_11.25.15' to 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.28_11.25.15'
+2025-09-11 13:57:10,198 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_19.28.10'.
+2025-09-11 13:57:10,365 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\2025.07.25_21.46.11'.
+2025-09-11 13:57:10,550 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\2025.07.28_16.55.55'.
+2025-09-11 13:57:20,383 - INFO - Copied timestamp folder '2025.07.28_16.55.55' to 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\2025.07.28_16.55.55'
+2025-09-11 13:57:20,583 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\2025.07.29_16.40.26'.
+2025-09-11 13:57:30,617 - INFO - Copied timestamp folder '2025.07.29_16.40.26' to 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\2025.07.29_16.40.26'
+2025-09-11 13:57:30,869 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\2025.08.05_18.02.28'.
+2025-09-11 13:57:40,658 - INFO - Copied timestamp folder '2025.08.05_18.02.28' to 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\2025.08.05_18.02.28'
+2025-09-11 13:57:41,046 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.30_20.23.09'.
+2025-09-11 13:57:53,027 - INFO - Copied timestamp folder '2025.07.30_20.23.09' to 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.30_20.23.09'
+2025-09-11 13:57:53,269 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\2025.07.24_17.46.38'.
+2025-09-11 13:57:57,109 - INFO - Copied timestamp folder '2025.07.24_17.46.38' to 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\2025.07.24_17.46.38'
+2025-09-11 13:57:57,332 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\2025.08.05_19.49.19'.
+2025-09-11 13:58:00,044 - INFO - Copied timestamp folder '2025.08.05_19.49.19' to 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\2025.08.05_19.49.19'
+2025-09-11 13:58:00,326 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\2025.08.06_12.05.04'.
+2025-09-11 13:58:02,051 - INFO - Copied timestamp folder '2025.08.06_12.05.04' to 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\2025.08.06_12.05.04'
+2025-09-11 13:58:02,226 - INFO - All desired folders and files from all sources are copied
+2025-09-11 13:58:02,228 - INFO - Copy completed at 13:58:02 Malay Peninsula Standard Time, 2025-09-11 (e.g., 13:25 +08, 2025-09-11)

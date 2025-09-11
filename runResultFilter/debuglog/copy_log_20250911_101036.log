@@ -1,0 +1,19 @@
+2025-09-11 10:10:36,334 - INFO - Checking destination parent directory: 'U:/NVL/HX/A0'
+2025-09-11 10:10:36,338 - INFO - Creating destination folder: 'U:/NVL/HX/A0/results_production'
+2025-09-11 10:10:36,342 - INFO - Starting processing of source folder: 'C:/Results/NVL/HX/A0'
+2025-09-11 10:10:36,344 - INFO - Traversing directory: 'C:/Results/NVL/HX/A0'
+2025-09-11 10:10:36,345 - INFO - Destination path calculated: 'U:/NVL/HX/A0/results_production\.'
+2025-09-11 10:10:36,347 - INFO - Traversing directory: 'C:/Results/NVL/HX/A0\D4534T6400084'
+2025-09-11 10:10:36,349 - INFO - Destination path calculated: 'U:/NVL/HX/A0/results_production\D4534T6400084'
+2025-09-11 10:10:36,350 - INFO - Evaluating directory: 'C:/Results/NVL/HX/A0\D4534T6400084\99999999_999_+99_+99'
+2025-09-11 10:10:36,351 - INFO - Ignoring folder 'C:/Results/NVL/HX/A0\D4534T6400084\99999999_999_+99_+99' as it matches the excluded name '99999999_999_+99_+99'.
+2025-09-11 10:10:36,352 - INFO - Evaluating directory: 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin'
+2025-09-11 10:10:36,353 - INFO - Searching for latest timestamp folder in 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin'
+2025-09-11 10:10:36,361 - INFO - Latest timestamp folder selected: '2025.09.09_13.23.29'
+2025-09-11 10:10:36,363 - INFO - Checking for 'HotVmin.xlsx' in 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29'
+2025-09-11 10:10:36,366 - WARNING - No exact 'HotVmin.xlsx' file found in 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29'
+2025-09-11 10:10:36,368 - INFO - Checking for 'HotGNG.xlsx' in 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29'
+2025-09-11 10:10:36,370 - WARNING - No exact 'HotGNG.xlsx' file found in 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29'
+2025-09-11 10:10:36,372 - INFO - Ignoring folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin' as the latest timestamp folder lacks a 'HotGNG.xlsx' file.
+2025-09-11 10:10:36,373 - INFO - All desired folders and files from all sources are copied
+2025-09-11 10:10:36,374 - INFO - Copy completed at 10:10:36 Malay Peninsula Standard Time, 2025-09-11 (e.g., 10:07 +08, 2025-09-11)

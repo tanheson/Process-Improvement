@@ -1,0 +1,103 @@
+2025-09-11 13:22:57,191 - INFO - Processing source folder: //PG07TCMV0088/c$/Results/ARL/S681/A0
+2025-09-11 13:22:57,642 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin' to '2025.07.28_11.25.15' (modified: Thu Sep 11 12:47:58 2025)
+2025-09-11 13:22:57,674 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin' to '2025.07.25_19.28.10' (modified: Thu Sep 11 12:48:04 2025)
+2025-09-11 13:22:57,709 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin' to '2025.07.25_21.46.11' (modified: Thu Sep 11 12:48:07 2025)
+2025-09-11 13:22:57,763 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin' to '2025.07.28_16.55.55' (modified: Wed Aug  6 14:47:56 2025)
+2025-09-11 13:22:57,807 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin' to '2025.07.29_16.40.26' (modified: Wed Aug  6 14:49:22 2025)
+2025-09-11 13:22:57,861 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin' to '2025.08.05_18.02.28' (modified: Wed Aug  6 14:51:34 2025)
+2025-09-11 13:22:57,894 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin' to '2025.07.30_20.23.09' (modified: Wed Aug  6 14:52:21 2025)
+2025-09-11 13:22:57,930 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin' to '2025.07.24_17.46.38' (modified: Wed Aug  6 14:53:12 2025)
+2025-09-11 13:22:57,964 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin' to '2025.08.05_19.49.19' (modified: Wed Aug  6 09:08:11 2025)
+2025-09-11 13:22:58,005 - INFO - Updated latest timestamp folder for 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin' to '2025.08.06_12.05.04' (modified: Wed Aug  6 14:41:13 2025)
+2025-09-11 13:22:58,734 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.28_11.22.15'.
+2025-09-11 13:22:58,788 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\DataLog.itf
+2025-09-11 13:22:59,358 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\DebugLog.txt
+2025-09-11 13:22:59,390 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\LoopingResults.txt
+2025-09-11 13:22:59,421 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\LotMetaData.json
+2025-09-11 13:22:59,461 - INFO - Copied: PGPMDMGLNXO_D4600EL800316_ARL_S681_CPU_Ring_x_F5_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\PGPMDMGLNXO_D4600EL800316_ARL_S681_CPU_Ring_x_F5_HotVmin.xlsx
+2025-09-11 13:22:59,500 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\ProfileLog.csv
+2025-09-11 13:22:59,836 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\RawSequencerMessageLogs.zip
+2025-09-11 13:23:00,079 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_CPU_Ring_x_F5_HotVmin\TraceLog.txt
+2025-09-11 13:23:00,284 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\2025.07.25_19.28.10'.
+2025-09-11 13:23:00,379 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\DataLog.itf
+2025-09-11 13:23:01,628 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\DebugLog.txt
+2025-09-11 13:23:01,660 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\LoopingResults.txt
+2025-09-11 13:23:01,693 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\LotMetaData.json
+2025-09-11 13:23:01,752 - INFO - Copied: PGPMDIB7LGE_D4600EL800316_ARL_S681_SOC_SA_GT_F3_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\PGPMDIB7LGE_D4600EL800316_ARL_S681_SOC_SA_GT_F3_HotVmin.xlsx
+2025-09-11 13:23:01,830 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\ProfileLog.csv
+2025-09-11 13:23:02,909 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\RawSequencerMessageLogs.zip
+2025-09-11 13:23:03,570 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_GT_F3_HotVmin\TraceLog.txt
+2025-09-11 13:23:03,722 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\2025.07.25_21.46.11'.
+2025-09-11 13:23:03,775 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\DataLog.itf
+2025-09-11 13:23:04,365 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\DebugLog.txt
+2025-09-11 13:23:04,394 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\LoopingResults.txt
+2025-09-11 13:23:04,425 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\LotMetaData.json
+2025-09-11 13:23:04,466 - INFO - Copied: PGPMDIB7SYQ_D4600EL800316_ARL_S681_SOC_SA_VPU_F3_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\PGPMDIB7SYQ_D4600EL800316_ARL_S681_SOC_SA_VPU_F3_HotVmin.xlsx
+2025-09-11 13:23:04,512 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\ProfileLog.csv
+2025-09-11 13:23:04,943 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\RawSequencerMessageLogs.zip
+2025-09-11 13:23:05,182 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4600EL800316\ARL_S681_SOC_SA_VPU_F3_HotVmin\TraceLog.txt
+2025-09-11 13:23:05,433 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\2025.07.28_16.55.55'.
+2025-09-11 13:23:05,677 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\DataLog.itf
+2025-09-11 13:23:08,358 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\DebugLog.txt
+2025-09-11 13:23:08,392 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\LoopingResults.txt
+2025-09-11 13:23:08,425 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\LotMetaData.json
+2025-09-11 13:23:08,551 - INFO - Copied: PGPMDMRQV01_D4600EL800800_ARL_S681_CPU_A0_x_F5_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\PGPMDMRQV01_D4600EL800800_ARL_S681_CPU_A0_x_F5_HotVmin.xlsx
+2025-09-11 13:23:08,753 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\ProfileLog.csv
+2025-09-11 13:23:11,444 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\RawSequencerMessageLogs.zip
+2025-09-11 13:23:13,215 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A0_x_F5_HotVmin\TraceLog.txt
+2025-09-11 13:23:13,427 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\2025.07.29_16.40.26'.
+2025-09-11 13:23:13,676 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\DataLog.itf
+2025-09-11 13:23:16,380 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\DebugLog.txt
+2025-09-11 13:23:16,411 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\LoopingResults.txt
+2025-09-11 13:23:16,444 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\LotMetaData.json
+2025-09-11 13:23:16,567 - INFO - Copied: PGPMDO612AA_D4600EL800800_ARL_S681_CPU_A1_x_F5_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\PGPMDO612AA_D4600EL800800_ARL_S681_CPU_A1_x_F5_HotVmin.xlsx
+2025-09-11 13:23:16,771 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\ProfileLog.csv
+2025-09-11 13:23:19,444 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\RawSequencerMessageLogs.zip
+2025-09-11 13:23:21,222 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_A1_x_F5_HotVmin\TraceLog.txt
+2025-09-11 13:23:21,371 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\2025.08.05_18.02.28'.
+2025-09-11 13:23:21,613 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\DataLog.itf
+2025-09-11 13:23:24,340 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\DebugLog.txt
+2025-09-11 13:23:24,372 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\LoopingResults.txt
+2025-09-11 13:23:24,403 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\LotMetaData.json
+2025-09-11 13:23:24,528 - INFO - Copied: PGPMDY5ZR5M_D4600EL800800_ARL_S681_CPU_C5_Avx128_F5_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\PGPMDY5ZR5M_D4600EL800800_ARL_S681_CPU_C5_Avx128_F5_HotVmin.xlsx
+2025-09-11 13:23:24,733 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\ProfileLog.csv
+2025-09-11 13:23:27,310 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\RawSequencerMessageLogs.zip
+2025-09-11 13:23:29,129 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_Cdie_C5_Avx128_F5_HotVmin\TraceLog.txt
+2025-09-11 13:23:29,350 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\2025.07.30_20.23.09'.
+2025-09-11 13:23:29,621 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\DataLog.itf
+2025-09-11 13:23:32,699 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\DebugLog.txt
+2025-09-11 13:23:32,731 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\LoopingResults.txt
+2025-09-11 13:23:32,761 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\LotMetaData.json
+2025-09-11 13:23:32,906 - INFO - Copied: PGPMDPMWFDY_D4600EL800800_ARL_S681_CPU_Ring_x_F5_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\PGPMDPMWFDY_D4600EL800800_ARL_S681_CPU_Ring_x_F5_HotVmin.xlsx
+2025-09-11 13:23:33,149 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\ProfileLog.csv
+2025-09-11 13:23:36,226 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\RawSequencerMessageLogs.zip
+2025-09-11 13:23:38,311 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_CPU_Ring_x_F5_HotVmin\TraceLog.txt
+2025-09-11 13:23:38,457 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\2025.07.24_17.46.38'.
+2025-09-11 13:23:38,531 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\DataLog.itf
+2025-09-11 13:23:39,548 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\DebugLog.txt
+2025-09-11 13:23:39,579 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\LoopingResults.txt
+2025-09-11 13:23:39,611 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\LotMetaData.json
+2025-09-11 13:23:39,662 - INFO - Copied: PGPMDGY3H3H_D4600EL800800_ARL_S681_GCD_GT_x_F4_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\PGPMDGY3H3H_D4600EL800800_ARL_S681_GCD_GT_x_F4_HotVmin.xlsx
+2025-09-11 13:23:39,716 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\ProfileLog.csv
+2025-09-11 13:23:40,410 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\RawSequencerMessageLogs.zip
+2025-09-11 13:23:40,939 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F4_HotVmin\TraceLog.txt
+2025-09-11 13:23:41,073 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\2025.08.05_19.49.19'.
+2025-09-11 13:23:41,128 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\DataLog.itf
+2025-09-11 13:23:41,813 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\DebugLog.txt
+2025-09-11 13:23:41,842 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\LoopingResults.txt
+2025-09-11 13:23:41,870 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\LotMetaData.json
+2025-09-11 13:23:41,911 - INFO - Copied: PGPMDY5ZZZ4_D4600EL800800_ARL_S681_GCD_GT_x_F5_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\PGPMDY5ZZZ4_D4600EL800800_ARL_S681_GCD_GT_x_F5_HotVmin.xlsx
+2025-09-11 13:23:41,956 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\ProfileLog.csv
+2025-09-11 13:23:42,438 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\RawSequencerMessageLogs.zip
+2025-09-11 13:23:42,806 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_GCD_GT_x_F5_HotVmin\TraceLog.txt
+2025-09-11 13:23:42,993 - INFO - Removed timestamp folder 'U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\2025.08.06_12.05.04'.
+2025-09-11 13:23:43,032 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\DataLog.itf
+2025-09-11 13:23:43,535 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\DebugLog.txt
+2025-09-11 13:23:43,567 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\LoopingResults.txt
+2025-09-11 13:23:43,597 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\LotMetaData.json
+2025-09-11 13:23:43,636 - INFO - Copied: PGPMDZAHOK4_D4600EL800800_ARL_S681_SOC_SA_VPU_F2_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\PGPMDZAHOK4_D4600EL800800_ARL_S681_SOC_SA_VPU_F2_HotVmin.xlsx
+2025-09-11 13:23:43,676 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\ProfileLog.csv
+2025-09-11 13:23:43,952 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\RawSequencerMessageLogs.zip
+2025-09-11 13:23:44,089 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4600EL800800\ARL_S681_SOC_SA_VPU_F2_HotVmin\TraceLog.txt
+2025-09-11 13:23:44,400 - INFO - All desired folders and files from all sources are copied
+2025-09-11 13:23:44,401 - INFO - Copy completed at 13:23:44 Malay Peninsula Standard Time, 2025-09-11 (e.g., 13:20 +08, 2025-09-11)

@@ -1,0 +1,44 @@
+2025-09-11 11:21:06,371 - INFO - Processing source folder: C:/Results/NVL/HX/A0
+2025-09-11 11:21:06,373 - INFO - Ignoring folder 'C:/Results/NVL/HX/A0\D4534T6400084\99999999_999_+99_+99' as it matches the excluded name '99999999_999_+99_+99'.
+2025-09-11 11:21:06,383 - INFO - Keeping folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin' with latest timestamp folder '2025.09.09_15.23.29' and 'PGPMFC06DKI_D4534T6400035_ARL_S681_CPU_A0_x_F1_HotVmin.xlsx' (modified: Tue Sep  9 13:23:31 2025)
+2025-09-11 11:21:06,388 - INFO - Keeping folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG' with latest timestamp folder '2025.08.13_12.44.18' and 'PGPME9BY9VH_D4534T6400035_ARL_S681_CPU_A0_x_F3_HotGNG.xlsx' (modified: Wed Aug 13 11:44:30 2025)
+2025-09-11 11:21:06,390 - INFO - Ignoring timestamp folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_13.23.29' as it is not the latest.
+2025-09-11 11:21:06,426 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\DataLog.itf
+2025-09-11 11:21:06,580 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\DebugLog.txt
+2025-09-11 11:21:06,614 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\LoopingResults.txt
+2025-09-11 11:21:06,646 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\LotMetaData.json
+2025-09-11 11:21:06,701 - INFO - Copied: PGPMFC06DKI_D4534T6400035_ARL_S681_CPU_A0_x_F1_HotVmin (1).xlsx to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\PGPMFC06DKI_D4534T6400035_ARL_S681_CPU_A0_x_F1_HotVmin (1).xlsx
+2025-09-11 11:21:06,752 - INFO - Copied: PGPMFC06DKI_D4534T6400035_ARL_S681_CPU_A0_x_F1_HotVmin.xlsx to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\PGPMFC06DKI_D4534T6400035_ARL_S681_CPU_A0_x_F1_HotVmin.xlsx
+2025-09-11 11:21:06,784 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\ProfileLog.csv
+2025-09-11 11:21:07,204 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\RawSequencerMessageLogs.zip
+2025-09-11 11:21:07,262 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\TraceLog.txt
+2025-09-11 11:21:07,300 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\CurrentUnit\LotEndFlow\PythonLog.txt
+2025-09-11 11:21:07,305 - INFO - Ignoring folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\ARL_Atom0_F1_HotVmin' as it lacks valid timestamp folders.
+2025-09-11 11:21:07,346 - INFO - Copied: BootStageTransitions_BreakToEFI_20250909125836.log to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\BootStageTransitions_BreakToEFI_20250909125836.log
+2025-09-11 11:21:07,382 - INFO - Copied: DH24_1Charyb_SKY_1C7000E2_20250909125906.log to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\DH24_1Charyb_SKY_1C7000E2_20250909125906.log
+2025-09-11 11:21:07,412 - INFO - Copied: DH24_1Charyb_SKY_1C7000E2_20250909132045.log to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\DH24_1Charyb_SKY_1C7000E2_20250909132045.log
+2025-09-11 11:21:07,452 - INFO - Copied: DH24_1Charyb_SKY_1C7000E2_20250909132156.log to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\DH24_1Charyb_SKY_1C7000E2_20250909132156.log
+2025-09-11 11:21:07,498 - INFO - Copied: DH24_1Charyb_SKY_1C7000E2_20250909132200.log to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\DH24_1Charyb_SKY_1C7000E2_20250909132200.log
+2025-09-11 11:21:07,532 - INFO - Copied: DH24_1Charyb_SKY_1C7000E2_20250909132241.log to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\DH24_1Charyb_SKY_1C7000E2_20250909132241.log
+2025-09-11 11:21:07,560 - INFO - Copied: DH24_1Charyb_SKY_1C7000E2_20250909132245.log to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\DH24_1Charyb_SKY_1C7000E2_20250909132245.log
+2025-09-11 11:21:07,610 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\LotStartFlow\PythonLog.txt
+2025-09-11 11:21:07,656 - INFO - Copied: SerialPortLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\LotStartFlow\SerialPortLog.txt
+2025-09-11 11:21:07,760 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\UnitEndFlow\PythonLog.txt
+2025-09-11 11:21:07,858 - INFO - Copied: SerialPortLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\UnitEndFlow\SerialPortLog.txt
+2025-09-11 11:21:07,899 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin\2025.09.09_15.23.29\UnitLogs\D4534T6400035\UnitStartFlow\PythonLog.txt
+2025-09-11 11:21:07,901 - INFO - Ignoring timestamp folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_11.44.18' as it is not the latest.
+2025-09-11 11:21:07,985 - INFO - Copied: DataLog.itf to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\DataLog.itf
+2025-09-11 11:21:08,567 - INFO - Copied: DebugLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\DebugLog.txt
+2025-09-11 11:21:08,603 - INFO - Copied: LoopingResults.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\LoopingResults.txt
+2025-09-11 11:21:08,632 - INFO - Copied: LotMetaData.json to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\LotMetaData.json
+2025-09-11 11:21:08,761 - INFO - Copied: PGPME9BY9VH_D4534T6400035_ARL_S681_CPU_A0_x_F3_HotGNG.xlsx to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\PGPME9BY9VH_D4534T6400035_ARL_S681_CPU_A0_x_F3_HotGNG.xlsx
+2025-09-11 11:21:08,830 - INFO - Copied: ProfileLog.csv to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\ProfileLog.csv
+2025-09-11 11:21:11,863 - INFO - Copied: RawSequencerMessageLogs.zip to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\RawSequencerMessageLogs.zip
+2025-09-11 11:21:12,223 - INFO - Copied: TraceLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\TraceLog.txt
+2025-09-11 11:21:12,278 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\UnitLogs\CurrentUnit\LotEndFlow\PythonLog.txt
+2025-09-11 11:21:12,326 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\UnitLogs\D4534T6400035\LotStartFlow\PythonLog.txt
+2025-09-11 11:21:12,368 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\UnitLogs\D4534T6400035\UnitEndFlow\PythonLog.txt
+2025-09-11 11:21:12,397 - INFO - Copied: SerialPortLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\UnitLogs\D4534T6400035\UnitEndFlow\SerialPortLog.txt
+2025-09-11 11:21:12,434 - INFO - Copied: PythonLog.txt to U:/NVL/HX/A0/results_production\D4534T6400084\ARL_S681_Cdie_A0_x_F3_HotGNG\2025.08.13_12.44.18\UnitLogs\D4534T6400035\UnitStartFlow\PythonLog.txt
+2025-09-11 11:21:12,436 - INFO - All desired folders and files from all sources are copied
+2025-09-11 11:21:12,438 - INFO - Copy completed at 11:21:12 Malay Peninsula Standard Time, 2025-09-11 (e.g., 18:18 +08, 2025-09-02)

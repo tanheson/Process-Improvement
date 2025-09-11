@@ -1,0 +1,5 @@
+2025-09-11 10:36:51,502 - INFO - Processing source folder: C:/Results/NVL/HX/A0
+2025-09-11 10:36:51,505 - INFO - Ignoring folder 'C:/Results/NVL/HX/A0\D4534T6400084\99999999_999_+99_+99' as it matches the excluded name '99999999_999_+99_+99'.
+2025-09-11 10:36:51,516 - INFO - Ignoring folder 'C:/Results/NVL/HX/A0\D4534T6400084\ARL_S681_Cdie_A0_x_F1_HotVmin' as the latest timestamp folder lacks a 'HotVmin.xlsx' file.
+2025-09-11 10:36:51,517 - INFO - All desired folders and files from all sources are copied
+2025-09-11 10:36:51,518 - INFO - Copy completed at 10:36:51 Malay Peninsula Standard Time, 2025-09-11 (e.g., 10:34 +08, 2025-09-11)

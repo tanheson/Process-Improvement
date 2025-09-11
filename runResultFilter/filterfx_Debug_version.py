@@ -6,16 +6,14 @@ from datetime import datetime
 
 # Define multiple source folders and a single destination
 source_folders = [
-    r"C:/Results/NVL/S681/A0"               # Local path 
+    r"C:/Results/NVL/HX/A0",               # Local path 
     # r"C:/Results/ARL/S681/A0",                # Local path 
-    # r"//PG07TCMV0084/c$/Results/ARL/S681/A0", 
     # r"//PG07TCMV0088/c$/Results/ARL/S681/A0"
-
 ]
 destination_folder = r"U:/NVL/HX/A0/results_production"
 
 # Required file keywords to check
-required_file_keywords = ["HotVmin.xlsx", "HotGNG.xlsx"]  # Added HotGNG.xlsx
+required_file_keywords = ["HotVmin.xlsx", "HotGNG.xlsx"]
 
 # Define custom log directory
 custom_log_dir = r"U:/users/Hs/script/Process-Improvement/runResultFilter/debuglog"  # Change this to your desired log folder path
@@ -47,18 +45,19 @@ def parse_timestamp_folder_name(folder_name):
     except ValueError:
         return None
 
-def get_latest_timestamp_folder(hotvmin_path):
+def get_latest_timestamp_folder(folder_path):
     """Get the latest timestamp folder under a HotVmin or HotGNG folder."""
     timestamp_folders = []
-    for item in os.listdir(hotvmin_path):
-        item_path = os.path.join(hotvmin_path, item)
+    for item in os.listdir(folder_path):
+        item_path = os.path.join(folder_path, item)
         if os.path.isdir(item_path):
             timestamp = parse_timestamp_folder_name(item)
             if timestamp:
                 timestamp_folders.append((item_path, timestamp))
     if not timestamp_folders:
-        return None
-    return max(timestamp_folders, key=lambda x: x[1])[0]  # Return path of latest folder
+        return None, None
+    latest_folder, latest_timestamp = max(timestamp_folders, key=lambda x: x[1])
+    return latest_folder, latest_timestamp  # Return path and timestamp of latest folder
 
 try:
     # Check if destination parent directory exists
@@ -69,96 +68,93 @@ try:
     # Create destination folder
     os.makedirs(destination_folder, exist_ok=True)
 
-    # Process each source folder
+    # Dictionary to track the latest timestamp folder and its timestamp for each HotVmin/HotGNG folder
+    latest_timestamp_info = {}  # {folder_path: (latest_folder, latest_timestamp)}
+
+    # Process each source folder to find the latest timestamp
     for source_folder in source_folders:
-        # Check if source folder exists
         if not os.path.isdir(source_folder):
             logging.warning(f"Source folder '{source_folder}' does not exist. Skipping...")
             continue
 
         logging.info(f"Processing source folder: {source_folder}")
 
-        # Traverse the source folder
-        for root, dirs, files in os.walk(source_folder):
-            # Calculate the relative path from source_folder
+        for root, dirs, _ in os.walk(source_folder):
             relative_path = os.path.relpath(root, source_folder)
-            dest_path = os.path.join(destination_folder, relative_path)
-
-            # Filter folders under "D3" and "D4"
             if "D3" in relative_path or "D4" in relative_path:
-                # Check each directory in dirs
-                dirs_to_keep = []
                 for dir_name in dirs:
                     dir_full_path = os.path.join(root, dir_name)
-                    # Ignore the specific folder '99999999_999_+99_+99'
                     if dir_name == "99999999_999_+99_+99":
                         logging.info(f"Ignoring folder '{dir_full_path}' as it matches the excluded name '99999999_999_+99_+99'.")
                         continue
-                    if "HotVmin" in dir_name or "HotGNG" in dir_name:  # Check for both HotVmin and HotGNG
-                        # Get the latest timestamp folder
-                        latest_timestamp_folder = get_latest_timestamp_folder(dir_full_path)
-                        if not latest_timestamp_folder:
-                            logging.info(f"Ignoring folder '{dir_full_path}' as it lacks valid timestamp folders.")
-                            continue
-                        # Check for the relevant file (HotVmin.xlsx or HotGNG.xlsx)
-                        has_file = False
-                        latest_file = None
-                        for keyword in required_file_keywords:
-                            latest_file, has_file = get_latest_hotvmin_file(latest_timestamp_folder, keyword)
-                            if has_file:
-                                break
-                        if not has_file:
-                            logging.info(f"Ignoring folder '{dir_full_path}' as the latest timestamp folder lacks a '{required_file_keyword}' file.")
-                            continue
-                        logging.info(f"Keeping folder '{dir_full_path}' with latest timestamp folder '{os.path.basename(latest_timestamp_folder)}' and '{os.path.basename(latest_file)}' (modified: {time.ctime(os.path.getmtime(latest_file))})")
-                        dirs_to_keep.append(dir_name)  # Keep the HotVmin or HotGNG folder
+                    if "HotVmin" in dir_name or "HotGNG" in dir_name:
+                        latest_timestamp_folder, latest_timestamp = get_latest_timestamp_folder(dir_full_path)
+                        if latest_timestamp_folder:
+                            # Check for the presence of required files
+                            has_file = False
+                            for keyword in required_file_keywords:
+                                latest_file, file_exists = get_latest_hotvmin_file(latest_timestamp_folder, keyword)
+                                if file_exists:
+                                    has_file = True
+                                    break
+                            if not has_file:
+                                logging.info(f"Ignoring folder '{dir_full_path}' as the latest timestamp folder lacks a '{keyword}' file.")
+                                continue
+                            # Update latest timestamp info if this is the latest
+                            dest_relative_path = os.path.join(os.path.relpath(root, source_folder), dir_name)
+                            dest_folder_path = os.path.join(destination_folder, dest_relative_path)
+                            if dest_folder_path not in latest_timestamp_info or latest_timestamp > latest_timestamp_info[dest_folder_path][1]:
+                                latest_timestamp_info[dest_folder_path] = (latest_timestamp_folder, latest_timestamp)
+                                logging.info(f"Updated latest timestamp folder for '{dest_folder_path}' to '{os.path.basename(latest_timestamp_folder)}' (modified: {time.ctime(os.path.getmtime(latest_timestamp_folder))})")
+
+    # Copy and replace in destination
+    for source_folder in source_folders:
+        if not os.path.isdir(source_folder):
+            continue
+
+        for root, dirs, files in os.walk(source_folder):
+            relative_path = os.path.relpath(root, source_folder)
+            if "D3" in relative_path or "D4" in relative_path:
+                dirs_to_keep = []
+                for dir_name in dirs:
+                    dir_full_path = os.path.join(root, dir_name)
+                    if dir_name == "99999999_999_+99_+99":
+                        logging.info(f"Ignoring folder '{dir_full_path}' as it matches the excluded name '99999999_999_+99_+99'.")
+                        continue
+                    if "HotVmin" in dir_name or "HotGNG" in dir_name:
+                        latest_timestamp_folder, latest_timestamp = get_latest_timestamp_folder(dir_full_path)
+                        if latest_timestamp_folder:
+                            dest_relative_path = os.path.join(os.path.relpath(root, source_folder), dir_name)
+                            dest_folder_path = os.path.join(destination_folder, dest_relative_path)
+                            if dest_folder_path in latest_timestamp_info:
+                                latest_source_folder, latest_timestamp = latest_timestamp_info[dest_folder_path]
+                                # Remove all existing timestamp subfolders in destination
+                                if os.path.exists(dest_folder_path):
+                                    for item in os.listdir(dest_folder_path):
+                                        item_path = os.path.join(dest_folder_path, item)
+                                        if os.path.isdir(item_path):
+                                            item_timestamp = parse_timestamp_folder_name(item)
+                                            if item_timestamp:  # Remove only timestamp folders
+                                                shutil.rmtree(item_path)
+                                                logging.info(f"Removed timestamp folder '{item_path}'.")
+                                # Copy the entire latest timestamp folder
+                                if latest_source_folder == latest_timestamp_folder:
+                                    dest_timestamp_folder = os.path.join(dest_folder_path, os.path.basename(latest_timestamp_folder))
+                                    if os.path.exists(dest_timestamp_folder):
+                                        shutil.rmtree(dest_timestamp_folder)
+                                        logging.info(f"Removed existing '{os.path.basename(dest_timestamp_folder)}' to replace with latest.")
+                                    shutil.copytree(latest_timestamp_folder, dest_timestamp_folder, dirs_exist_ok=True)
+                                    logging.info(f"Copied timestamp folder '{os.path.basename(latest_timestamp_folder)}' to '{dest_timestamp_folder}'")
+                            dirs_to_keep.append(dir_name)
                     else:
-                        dirs_to_keep.append(dir_name)  # Keep non-"HotVmin"/"HotGNG" and non-excluded folders
-                # Update dirs to only include folders to keep (modifies os.walk behavior)
+                        dirs_to_keep.append(dir_name)
                 dirs[:] = dirs_to_keep
-
-                # Filter timestamp folders within HotVmin or HotGNG
-                if "HotVmin" in os.path.basename(root) or "HotGNG" in os.path.basename(root):
-                    latest_timestamp_folder = get_latest_timestamp_folder(root)
-                    if latest_timestamp_folder:
-                        # Keep only the latest timestamp folder
-                        timestamp_dirs_to_keep = []
-                        for dir_name in dirs:
-                            dir_full_path = os.path.join(root, dir_name)
-                            if dir_full_path == latest_timestamp_folder:
-                                timestamp_dirs_to_keep.append(dir_name)
-                            else:
-                                logging.info(f"Ignoring timestamp folder '{dir_full_path}' as it is not the latest.")
-                        dirs[:] = timestamp_dirs_to_keep  # Restrict to only the latest timestamp folder
-
-            # Copy files and create directories
-            for file in files:
-                source_path = os.path.join(root, file)
-                destination_path = os.path.join(dest_path, file)
-                if not ("HotVmin" in os.path.basename(root) or "HotGNG" in os.path.basename(root)):  # Avoid copying files directly under HotVmin or HotGNG
-                    os.makedirs(os.path.dirname(destination_path), exist_ok=True)
-                    shutil.copy2(source_path, destination_path)
-                    logging.info(f"Copied: {file} to {destination_path}")
-                # Handle copying from the latest timestamp folder under HotVmin or HotGNG
-                if ("HotVmin" in os.path.basename(os.path.dirname(root)) or "HotGNG" in os.path.basename(os.path.dirname(root))) and os.path.basename(root).replace(".", "_").replace(":", "").isdigit():
-                    latest_timestamp_folder = get_latest_timestamp_folder(os.path.dirname(root))
-                    if root.startswith(latest_timestamp_folder):
-                        for keyword in required_file_keywords:
-                            if keyword in file:
-                                latest_file, _ = get_latest_hotvmin_file(root, keyword)
-                                if os.path.abspath(source_path) != os.path.abspath(latest_file):
-                                    logging.info(f"Ignoring older '{file}' in '{root}'.")
-                                    continue
-                                break
-                        os.makedirs(os.path.dirname(destination_path), exist_ok=True)
-                        shutil.copy2(source_path, destination_path)
-                        logging.info(f"Copied: {file} to {destination_path}")
 
     logging.info("All desired folders and files from all sources are copied")
 
     # Log the completion time
     current_time = time.strftime("%H:%M:%S %Z, %Y-%m-%d", time.localtime())
-    logging.info(f"Copy completed at {current_time} (e.g., 18:18 +08, 2025-09-02)")
+    logging.info(f"Copy completed at {current_time} (e.g., 13:25 +08, 2025-09-11)")
 
 except PermissionError:
     logging.error(f"Error: Permission denied while accessing a source or '{destination_folder}'. Ensure you have appropriate rights.")
