@@ -108,7 +108,7 @@ try:
             logging.info(f"Started processing source folder: {source_folder}")
             for root, dirs, _ in os.walk(source_folder):
                 relative_path = os.path.relpath(root, source_folder)
-                if "D3" in relative_path or "D4" in relative_path:
+                if "U4" in relative_path or "U5" in relative_path:
                     for dir_name in dirs:
                         dir_full_path = os.path.join(root, dir_name)
                         # Ignore the 99999999_999_+99_+99 folder and its subtrees
