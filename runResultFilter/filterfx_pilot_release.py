@@ -6,13 +6,14 @@ from datetime import datetime
 
 # Define multiple source folders and a single destination
 source_folders = [
-    r"C:/Results/NVL/HX/A0",                # Local path 
+    # r"C:/Results/NVL/HX/A0",                # Local path 
     # r"C:/Results/ARL/S681/A0",               # Local path
+    # r"//PG07TCMV0020/c$/Results/NVL/Hx/A0", 
     # r"//PG07TCMV0021/c$/Results/NVL/Hx/A0", 
     # r"//PG07TCMV0022/c$/Results/NVL/Hx/A0",
     # r"//PG07TCMV0023/c$/Results/NVL/Hx/A0",
     # r"//PG07TCMV0024/c$/Results/NVL/Hx/A0",
-    # r"//PG07TCMV0025/c$/Results/NVL/Hx/A0",
+    r"//PG07TCMV0025/c$/Results/NVL/Hx/A1",
     # r"//PG07TCMV0026/c$/Results/NVL/Hx/A0",
     # r"//PG07TCMV0027/c$/Results/NVL/Hx/A0",
     # r"//PG07TCMV0028/c$/Results/NVL/Hx/A0",
@@ -21,10 +22,10 @@ source_folders = [
     # r"//PG07TCMV0031/c$/Results/NVL/Hx/A0",
 
 ]
-destination_folder = r"U:/NVL/HX/A0/results_production"
+destination_folder = r"U:/NVL/HX/A1/results_production"
 
 # Required file keywords to check
-required_file_keywords = ["HotVmin.xlsx", "HotGNG.xlsx"]
+required_file_keywords = ["HotVmin.xlsx", "GNG.xlsx"]
 
 # Define custom log directory
 custom_log_dir = r"U:/users/Hs/script/Process-Improvement/runResultFilter/debuglog"
@@ -57,7 +58,7 @@ def parse_timestamp_folder_name(folder_name):
         return None
 
 def get_latest_timestamp_folder(folder_path):
-    """Get the latest timestamp folder under a HotVmin or HotGNG folder."""
+    """Get the latest timestamp folder under a HotVmin or GNG folder."""
     timestamp_folders = []
     for item in os.listdir(folder_path):
         item_path = os.path.join(folder_path, item)
@@ -93,7 +94,7 @@ try:
     # Create destination folder
     os.makedirs(destination_folder, exist_ok=True)
 
-    # Dictionary to track the latest timestamp folder and its timestamp for each HotVmin/HotGNG folder across all paths
+    # Dictionary to track the latest timestamp folder and its timestamp for each HotVmin/GNG folder across all paths
     latest_timestamp_info = {}  # {dest_folder_path: (latest_folder, latest_timestamp, source_folder)}
 
     # Process each source folder to find the latest timestamp
@@ -115,7 +116,7 @@ try:
                         if "99999999_999_+99_+99" in dir_full_path:
                             logging.info(f"Ignoring folder '{dir_full_path}' and its subtrees as it contains the excluded name '99999999_999_+99_+99'.")
                             continue
-                        if "HotVmin" in dir_name or "HotGNG" in dir_name:
+                        if "HotVmin" in dir_name or "GNG" in dir_name:
                             latest_timestamp_folder, latest_timestamp = get_latest_timestamp_folder(dir_full_path)
                             if latest_timestamp_folder:
                                 # Check for the presence of required files
