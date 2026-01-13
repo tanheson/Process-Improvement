@@ -6,29 +6,41 @@ from datetime import datetime
 
 # Define multiple source folders and a single destination
 source_folders = [
-    # r"C:/Results/NVL/HX/A0",               # Local path 
-    r"C:/Results/ARL/S681/A0",               # Local path 
-    r"//PG07TCMV0088/c$/Results/ARL/S681/A0",
-    r"//PG07TCMV0085/c$/Results/ARL/S681/A0",
-    r"//PG07TCMV0083/c$/Results/ARL/S681/A0"
+    # r"//PG07TCMV0020/c$/Results/NVL/Hx/A1", 
+    r"//PG07TCMV0021/c$/Results/NVL/Hx/A1", 
+    # r"//PG07TCMV0022/c$/Results/NVL/Hx/A1",
+    r"//PG07TCMV0023/c$/Results/NVL/Hx/A1",
+    r"//PG07TCMV0024/c$/Results/NVL/Hx/A1",
+    r"//PG07TCMV0025/c$/Results/NVL/Hx/A1",
+    r"//PG07TCMV0026/c$/Results/NVL/Hx/A1",
+    # r"//PG07TCMV0027/c$/Results/NVL/Hx/A1",
+    # r"//PG07TCMV0028/c$/Results/NVL/Hx/A1",
+    r"//PG07TCMV0029/c$/Results/NVL/Hx/A1",
+    # r"//PG07TCMV0030/c$/Results/NVL/Hx/A1",
+    # r"//PG07TCMV0031/c$/Results/NVL/Hx/A1"
+    # r"//PG07TCMV0032/c$/Results/NVL/Hx/A1",
+
 ]
-destination_folder = r"U:/NVL/HX/A0/results_production"
+destination_folder = r"U:/NVL/HX/A1/results_production"
 
 # Required file keywords to check
-required_file_keywords = ["HotVmin.xlsx", "HotGNG.xlsx"]
+required_file_keywords = ["HotVmin.xlsx", "GNG.xlsx"]
 
 # Define custom log directory
 custom_log_dir = r"U:/users/Hs/script/Process-Improvement/runResultFilter/debuglog"
 os.makedirs(custom_log_dir, exist_ok=True)
 log_filename = os.path.join(custom_log_dir, f"copy_log_{time.strftime('%Y%m%d_%H%M%S')}.log")
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler(log_filename),
-        logging.StreamHandler()
-    ]
-)
+
+# === FIXED LOGGING SETUP WITH UTF-8 ENCODING ===
+file_handler = logging.FileHandler(log_filename, encoding='utf-8')
+file_handler.setLevel(logging.INFO)
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+logging.basicConfig(level=logging.INFO, handlers=[file_handler, console_handler])
+# ================================================
 
 def get_latest_hotvmin_file(folder_path, keyword):
     """Check if a folder contains a file with the required keyword and get the latest modified file."""
@@ -48,7 +60,7 @@ def parse_timestamp_folder_name(folder_name):
         return None
 
 def get_latest_timestamp_folder(folder_path):
-    """Get the latest timestamp folder under a HotVmin or HotGNG folder."""
+    """Get the latest timestamp folder under a HotVmin or GNG folder."""
     timestamp_folders = []
     for item in os.listdir(folder_path):
         item_path = os.path.join(folder_path, item)
@@ -84,7 +96,7 @@ try:
     # Create destination folder
     os.makedirs(destination_folder, exist_ok=True)
 
-    # Dictionary to track the latest timestamp folder and its timestamp for each HotVmin/HotGNG folder across all paths
+    # Dictionary to track the latest timestamp folder and its timestamp for each HotVmin/GNG folder across all paths
     latest_timestamp_info = {}  # {dest_folder_path: (latest_folder, latest_timestamp, source_folder)}
 
     # Process each source folder to find the latest timestamp
@@ -103,10 +115,10 @@ try:
                     for dir_name in dirs:
                         dir_full_path = os.path.join(root, dir_name)
                         # Ignore the 99999999_999_+99_+99 folder and its subtrees
-                        if "99999999_999_+99_+99" in dir_full_path:
+                        if "99999999_999_+99_+99" in dir_full_path or "DOE" in dir_full_path:
                             logging.info(f"Ignoring folder '{dir_full_path}' and its subtrees as it contains the excluded name '99999999_999_+99_+99'.")
                             continue
-                        if "HotVmin" in dir_name or "HotGNG" in dir_name:
+                        if "HotVmin" in dir_name or "GNG" in dir_name:
                             latest_timestamp_folder, latest_timestamp = get_latest_timestamp_folder(dir_full_path)
                             if latest_timestamp_folder:
                                 # Check for the presence of required files
@@ -164,6 +176,23 @@ try:
             logging.error(f"OSError while copying to '{dest_folder_path}': {str(e)}")
         except Exception as e:
             logging.error(f"Unexpected error copying to '{dest_folder_path}': {str(e)}")
+
+    # === NEW: Copy entire source "Shmoo" folder (if exists) under U4/U5 ===
+    logging.info("Starting additional Shmoo folder copy (all contents)...")
+    for source_folder in source_folders:
+        if not os.path.isdir(source_folder):
+            continue
+        for root, dirs, _ in os.walk(source_folder):
+            rel = os.path.relpath(root, source_folder)
+            if "U4" in rel or "U5" in rel:
+                shmoo_source = os.path.join(root, "Shmoo")
+                if os.path.exists(shmoo_source) and os.path.isdir(shmoo_source):
+                    # Build destination path: U:/.../U4/Shmoo or U:/.../U5/Shmoo
+                    dest_shmoo_path = os.path.join(destination_folder,
+                                                   os.path.relpath(root, source_folder), "Shmoo")
+                    os.makedirs(dest_shmoo_path, exist_ok=True)
+                    logging.info(f"Copying entire source Shmoo folder: {shmoo_source} → {dest_shmoo_path}")
+                    copy_with_timeout(shmoo_source, dest_shmoo_path)
 
     if paths_processed > 0:
         logging.info("All desired folders and files from all processed sources are copied")
