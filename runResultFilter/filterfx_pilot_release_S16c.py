@@ -6,22 +6,19 @@ from datetime import datetime
 
 # Define multiple source folders and a single destination
 source_folders = [
-    #r"//PG07TCMV0020/c$/Results/NVL/Hx/B0", 
-    r"//PG07TCMV0021/c$/Results/NVL/Hx/B0", 
-    r"//PG07TCMV0022/c$/Results/NVL/Hx/B0",
-    r"//PG07TCMV0023/c$/Results/NVL/Hx/B0",
-    #r"//PG07TCMV0024/c$/Results/NVL/Hx/B0",
-    r"//PG07TCMV0025/c$/Results/NVL/Hx/B0",
-    r"//PG07TCMV0026/c$/Results/NVL/Hx/B0",
-    r"//PG07TCMV0027/c$/Results/NVL/Hx/B0",
-    #r"//PG07TCMV0028/c$/Results/NVL/Hx/B0",
-    r"//PG07TCMV0029/c$/Results/NVL/Hx/B0",
-    #r"//PG07TCMV0030/c$/Results/NVL/Hx/B0",
-    #r"//PG07TCMV0031/c$/Results/NVL/Hx/B0",
-    #r"//PG07TCMV0032/c$/Results/NVL/Hx/B0",
+    r"//PG07TCMV0080/c$/Results/NVL/S16C/A0", 
+    r"//PG07TCMV0081/c$/Results/NVL/S16C/A0", 
+    #r"//PG07TCMV0082/c$/Results/NVL/S16C/A0",
+    r"//PG07TCMV0083/c$/Results/NVL/S16C/A0",
+    r"//PG07TCMV0084/c$/Results/NVL/S16C/A0",
+    #r"//PG07TCMV0085/c$/Results/NVL/S16C/A0",
+    r"//PG07TCMV0086/c$/Results/NVL/S16C/A0",
+    r"//PG07TCMV0087/c$/Results/NVL/S16C/A0",
+    r"//PG07TCMV0088/c$/Results/NVL/S16C/A0",
+    #r"//PG07TCMV0089/c$/Results/NVL/S16C/A0",
 
 ]
-destination_folder = r"U:/NVL/HX/B0/results_production"
+destination_folder = r"U:/NVL/S16C/A0/results_production"
 
 # Required file keywords to check
 required_file_keywords = ["HotVmin.xlsx", "GNG.xlsx"]
@@ -111,7 +108,7 @@ try:
             logging.info(f"Started processing source folder: {source_folder}")
             for root, dirs, _ in os.walk(source_folder):
                 relative_path = os.path.relpath(root, source_folder)
-                if "U5" in relative_path or "U6" in relative_path:
+                if "M6" in relative_path or "M7" in relative_path:
                     for dir_name in dirs:
                         dir_full_path = os.path.join(root, dir_name)
                         # Ignore the 99999999_999_+99_+99 folder and its subtrees
@@ -177,17 +174,17 @@ try:
         except Exception as e:
             logging.error(f"Unexpected error copying to '{dest_folder_path}': {str(e)}")
 
-    # === NEW: Copy entire source "Shmoo" folder (if exists) under U5/U6 ===
+    # === NEW: Copy entire source "Shmoo" folder (if exists) under M6/M7 ===
     logging.info("Starting additional Shmoo folder copy (all contents)...")
     for source_folder in source_folders:
         if not os.path.isdir(source_folder):
             continue
         for root, dirs, _ in os.walk(source_folder):
             rel = os.path.relpath(root, source_folder)
-            if "U5" in rel or "U6" in rel:
+            if "M6" in rel or "M7" in rel:
                 shmoo_source = os.path.join(root, "Shmoo")
                 if os.path.exists(shmoo_source) and os.path.isdir(shmoo_source):
-                    # Build destination path: U:/.../U5/Shmoo or U:/.../U6/Shmoo
+                    # Build destination path: U:/.../M6/Shmoo or U:/.../M7/Shmoo
                     dest_shmoo_path = os.path.join(destination_folder,
                                                    os.path.relpath(root, source_folder), "Shmoo")
                     os.makedirs(dest_shmoo_path, exist_ok=True)
